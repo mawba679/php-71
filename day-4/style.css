@@ -23,6 +23,18 @@
     float: left;
 }
 
+.row:after{
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+.wrapper{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
 .box-three{
     height: 300px;
     width: 1910px;
@@ -53,3 +65,17 @@
 .col-10{width: 83.33%}
 .col-11{width: 91.66%}
 .col-12{width: 100%}
+
+[class*='col-'] {
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.header-top-height {height: 30px;}
+.header-height {height: 200px;}
+.menu-height {height: 50px;}
+.content-height {height: 600px;}
+.big-footer-height {height: 300px;}
+.footer-height {height: 30px;}
+
